@@ -1,0 +1,10 @@
+connect-exchangeonlinemanagement
+
+
+
+Get-Mailbox | Select-Object identity, whencreatedUTC | Export-Csv 'C:\Users\Asus 507\Desktop\2.csv'
+
+
+---------------
+
+70%
