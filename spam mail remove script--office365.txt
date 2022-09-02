@@ -1,0 +1,15 @@
+--------------------------------
+
+
+connect-exchangeonline
+connect-ippssession
+$Search=New-ComplianceSearch -Name "Remove Phishing Message" -ExchangeLocation All -ContentMatchQuery '(Received:3/21/2022..3/23/2022) AND (Subject:"Invoice INV-0152")'
+Start-ComplianceSearch -Identity $Search.Identity
+New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
+Then Press Y 
+
+
+***For check : New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete and press Y
+
+
+--------

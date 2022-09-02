@@ -1,0 +1,45 @@
+creatation :
+
+1.
+2.
+3. add new user to group
+
+note : attribute editor
+office 365 thek kico add kora jabe naa
+
+--------------------------------------------------
+
+sync Issue :
+
+synchronization service Manager on PC
+>>connector
+
+1. full import 
+
+30 minites r moddhe user add na hole...
+
+----------------------------------------------------
+
+Azure AD connect :
+
+----------------------------------------------------
+
+User add to gitlab: Permissio
+
+select user>account >> log on to >> dc1 dc 
+
+--------------------------------------------------
+
+Mail lice add
+
+...
+location : bd
+office365 buisness essetial
+
+allbits : group add default.
+----------------------------------------------
+
+
+
+
+

@@ -1,0 +1,28 @@
+Install-Module -Name AzureAD
+Set-ExecutionPolicy RemoteSigned
+Import-Module ExchangeOnlineManagement
+
+Connect-ExchangeOnline
+$Groups=Get-DistributionGroup -identity
+
+$Groups=Get-DistributionGroup -identity "All biTS Contractual"
+
+$Groups| foreach{
+
+$GroupName=$_.Name
+
+$Report+=Get-distributionGroupMember -identity $_.identity| select @{Name='Distribution Group'; Expression={[String]::join(";", $GroupName)}}, Name, PrimarySmtpAddress}
+
+
+$Report| export-csv "c:\MyFile.csv" 
+
+
+
+##### clone####
+
+Import-CSV "C:\Users\Administrator\Desktop\parents.csv" | Foreach-Object { Add-DistributionGroupMember -Identity "TestDL2" -Member $_.Member }
+
+test-today
+
+Import-CSV "d:\ab.csv" | Foreach-Object { Add-DistributionGroupMember -Identity "test-today" -Member $_.Member }
+
